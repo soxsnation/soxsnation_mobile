@@ -18,6 +18,10 @@
 		49A82C091B83AD0500DD44C7 /* soxsnation_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A82C081B83AD0500DD44C7 /* soxsnation_mobileTests.m */; };
 		49A82C151B83ADA900DD44C7 /* soxsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A82C141B83ADA900DD44C7 /* soxsItem.m */; };
 		49A82C181B83B9C300DD44C7 /* soxsItemDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A82C171B83B9C300DD44C7 /* soxsItemDoc.m */; };
+		49B91E4F1B83E759008E33BF /* soxsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B91E4E1B83E759008E33BF /* soxsDelegate.m */; };
+		49BA78511B855CB1005CB3B1 /* soxsType.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78501B855CB1005CB3B1 /* soxsType.m */; };
+		49BA78541B855EC2005CB3B1 /* soxsTypeDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78531B855EC2005CB3B1 /* soxsTypeDelegate.m */; };
+		49BA78571B855F5B005CB3B1 /* soxsTypeDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 49BA78561B855F5B005CB3B1 /* soxsTypeDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		49A82C141B83ADA900DD44C7 /* soxsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsItem.m; sourceTree = "<group>"; };
 		49A82C161B83B9B600DD44C7 /* soxsItemDoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxsItemDoc.h; sourceTree = "<group>"; };
 		49A82C171B83B9C300DD44C7 /* soxsItemDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsItemDoc.m; sourceTree = "<group>"; };
+		49B91E4D1B83E74C008E33BF /* soxsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxsDelegate.h; sourceTree = "<group>"; };
+		49B91E4E1B83E759008E33BF /* soxsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsDelegate.m; sourceTree = "<group>"; };
+		49BA784C1B855C43005CB3B1 /* soxsType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxsType.h; sourceTree = "<group>"; };
+		49BA78501B855CB1005CB3B1 /* soxsType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsType.m; sourceTree = "<group>"; };
+		49BA78521B855EB7005CB3B1 /* soxsTypeDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxsTypeDelegate.h; sourceTree = "<group>"; };
+		49BA78531B855EC2005CB3B1 /* soxsTypeDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsTypeDelegate.m; sourceTree = "<group>"; };
+		49BA78551B855F47005CB3B1 /* soxsTypeDoc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = soxsTypeDoc.h; sourceTree = "<group>"; };
+		49BA78561B855F5B005CB3B1 /* soxsTypeDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soxsTypeDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 		49A82BDA1B83AD0400DD44C7 = {
 			isa = PBXGroup;
 			children = (
+				49B91E4C1B83E71B008E33BF /* GUI */,
 				49A82C121B83AD7900DD44C7 /* Models */,
 				49A82BE51B83AD0400DD44C7 /* soxsnation_mobile */,
 				49A82C051B83AD0500DD44C7 /* soxsnation_mobileTests */,
@@ -141,8 +154,23 @@
 				49A82C141B83ADA900DD44C7 /* soxsItem.m */,
 				49A82C161B83B9B600DD44C7 /* soxsItemDoc.h */,
 				49A82C171B83B9C300DD44C7 /* soxsItemDoc.m */,
+				49BA784C1B855C43005CB3B1 /* soxsType.h */,
+				49BA78501B855CB1005CB3B1 /* soxsType.m */,
+				49BA78551B855F47005CB3B1 /* soxsTypeDoc.h */,
+				49BA78561B855F5B005CB3B1 /* soxsTypeDoc.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		49B91E4C1B83E71B008E33BF /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				49B91E4D1B83E74C008E33BF /* soxsDelegate.h */,
+				49B91E4E1B83E759008E33BF /* soxsDelegate.m */,
+				49BA78521B855EB7005CB3B1 /* soxsTypeDelegate.h */,
+				49BA78531B855EC2005CB3B1 /* soxsTypeDelegate.m */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +274,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A82BF51B83AD0500DD44C7 /* DetailViewController.m in Sources */,
+				49B91E4F1B83E759008E33BF /* soxsDelegate.m in Sources */,
 				49A82C151B83ADA900DD44C7 /* soxsItem.m in Sources */,
+				49BA78541B855EC2005CB3B1 /* soxsTypeDelegate.m in Sources */,
 				49A82BF21B83AD0500DD44C7 /* MasterViewController.m in Sources */,
 				49A82C181B83B9C300DD44C7 /* soxsItemDoc.m in Sources */,
+				49BA78511B855CB1005CB3B1 /* soxsType.m in Sources */,
 				49A82BEC1B83AD0500DD44C7 /* AppDelegate.m in Sources */,
 				49A82BEF1B83AD0500DD44C7 /* soxsnation_mobile.xcdatamodeld in Sources */,
+				49BA78571B855F5B005CB3B1 /* soxsTypeDoc.m in Sources */,
 				49A82BE91B83AD0500DD44C7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +478,7 @@
 				49A82C0E1B83AD0500DD44C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		49A82C0F1B83AD0500DD44C7 /* Build configuration list for PBXNativeTarget "soxsnation_mobileTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +487,7 @@
 				49A82C111B83AD0500DD44C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

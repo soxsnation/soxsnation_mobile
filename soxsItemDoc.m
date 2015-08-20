@@ -6,19 +6,22 @@
 //  Copyright (c) 2015 Andrew Brown. All rights reserved.
 //
 
-#import "soxsItem.h"
 #import "soxsItemDoc.h"
+#import "soxsItem.h"
 
 @implementation soxsItemDoc
 @synthesize data = _data;
-@synthesize thumbImage = _thumbImage;
-@synthesize fullImage = _fullImage;
+//@synthesize desc = _desc;
+//@synthesize thumbImage = _thumbImage;
+//@synthesize fullImage = _fullImage;
 
-- (id)initWithTitle:(NSString*)title rating:(float)rating thumbImage:(UIImage *)thumbImage fullImage:(UIImage *)fullImage {
+
+- (id)initWithTitle:(NSString*)title desc:(NSString*)desc {
     if ((self = [super init])) {
-        self.data = [[RWTScaryBugData alloc] initWithTitle:title rating:rating];
-        self.thumbImage = thumbImage;
-        self.fullImage = fullImage;
+        self.data = [[soxsItem alloc] initWithTitle:title desc:desc];
+//        self.desc = desc;
+//        self.thumbImage = thumbImage;
+//        self.fullImage = fullImage;
     }
     return self;
 }

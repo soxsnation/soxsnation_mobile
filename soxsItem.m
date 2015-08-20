@@ -11,12 +11,12 @@
 @implementation soxsItem
 
 @synthesize title = _title;
-@synthesize rating = _rating;
+@synthesize desc = _desc;
 
-- (id)initWithTitle:(NSString*)title rating:(float)rating {
+- (id)initWithTitle:(NSString*)title desc:desc  {
     if ((self = [super init])) {
         self.title = title;
-        self.rating = rating;
+        self.desc = desc;
     }
     return self;
 }
